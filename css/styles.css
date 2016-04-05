@@ -1,0 +1,29 @@
+/**
+ * Styles for super power cards
+ */
+.super-power-card {
+    height: 280px;
+}
+
+.super-power-card img {
+    /* height: 196px; */
+    display: inline;
+    width: 160px;
+    left: 30px;
+    top: 118px;
+    position: fixed;
+}
+
+/**
+ * Styles for blue power cards
+ */
+.blue-power-card::before {
+    content: url(images/def_blue_elite.png);
+}
+
+/**
+ * Styles for Stars
+ */
+img.stars {
+    width:20px;
+}
