@@ -1,5 +1,8 @@
 body {
-  background-color: #2f3144;
+  background-color:#2f3144;
+}
+.wrapper {
+  width: 418px;
 }
 /**
  * Styles for super power cards
@@ -52,12 +55,13 @@ img.stars {
     position: absolute;
     top: 47px;
     left: 193px;
+    width: 106px;
     font-family: Impact, "Arial Black", sans-serif;
     font-size: 18px;
     color: #fcfcfc;
 }
 
-.rules-text{
+.rules-text {
   font-family: Helvetica, sans-serif;
   position: absolute;
   top: 255px;
@@ -68,7 +72,13 @@ img.stars {
   color: white;
   overflow: auto;
 }
-.health{
+
+.rules-text:hover {
+  height:100%;
+  background-color: rgba(#4a474b, 0.61)
+}
+
+.health {
   font-family: Impact, "Arial Black", sans-serif;
   color: #eb1a1a;
   position: absolute;
@@ -76,7 +86,7 @@ img.stars {
   left: 173px;
   font-size: 20px;
 }
-.defense{
+.defense {
   font-family: Impact, "Arial Black", sans-serif;
   color:#0ed4ec;
   position: absolute;
@@ -85,7 +95,7 @@ img.stars {
   left: 223px;
 }
 
-.speed{
+.speed {
   font-family: Impact, "Arial Black", sans-serif;
   color: #14e662;
   position: absolute;
