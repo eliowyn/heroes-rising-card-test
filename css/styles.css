@@ -2,11 +2,6 @@ body {
     background-color: #2f3144;
 }
 
-/*.wrapper {
-  width: 418px;
-}*/
-
-
 /**
  * Styles for the entire super power card
  */
@@ -30,16 +25,16 @@ body {
 *Styles for red power cards
 */
 
-.red-power-card::before {
-    content: url(images/red_elite_small.png);
+.red-power-card {
+    background-image: url(images/red_elite_small.png);
 }
 
 /**
 *Stlye for green power cards
 */
 
-.green-power-card::before {
-    content: url(images/green_elite_small.png)
+.green-power-card {
+    background-image: url(images/green_elite_small.png)
 }
 .card-name {
     position: relative;
@@ -48,6 +43,9 @@ body {
     font-family: Impact, "Arial Black", sans-serif;
     font-size: 18px;
     color: #fcfcfc;
+}
+.red-power-card > .card-name {
+    font-size: 14.5px;
 }
 div.card-artwork {
     width: 88%;
@@ -70,7 +68,7 @@ div.card-artwork > img.stars {
 div.card-stats {
     position: relative;
     display: block;
-    top: 11%;
+    top: 11.5%;
     left: 5.5%;
     width: 90%;
     padding: 0;
@@ -87,9 +85,9 @@ span.rules-text {
     font-family: Helvetica, sans-serif;
     position: relative;
     display: block;
-    top: 13.5%;
+    top: 14.5%;
     width: 55%;
-    height: 20%;
+    height: 19%;
     text-align: center;
     text-overflow: ellipsis;
     /*white-space: nowrap; This combined with ellipsis cuts horizontally, but not vertically, google it for vertical*/
