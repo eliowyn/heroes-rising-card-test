@@ -1,5 +1,6 @@
 body {
     background-color: #2f3144;
+    background: linear-gradient(to bottom right, #353853, #000000);
 }
 
 /**
@@ -43,6 +44,7 @@ body {
     font-family: Impact, "Arial Black", sans-serif;
     font-size: 18px;
     color: #fcfcfc;
+    line-height: 25px;
 }
 .red-power-card > .card-name {
     font-size: 14.5px;
@@ -60,10 +62,11 @@ div.card-artwork > img.artwork {
     margin: 0 auto 0 auto;
     display: block;
 }
-div.card-artwork > img.stars {
-    position: relative;
+div.card-artwork > img.tier {
+    position: absolute;
     display: block;
-    top: -99%;
+    top: 0;
+    left: 1%;
 }
 div.card-stats {
     position: relative;
@@ -84,23 +87,27 @@ div.card-stats > span {
 span.rules-text {
     font-family: Helvetica, sans-serif;
     position: relative;
-    display: block;
     top: 14.5%;
     width: 55%;
     height: 19%;
     text-align: center;
-    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
     /*white-space: nowrap; This combined with ellipsis cuts horizontally, but not vertically, google it for vertical*/
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     font-size: 8.25px;
     color: #FFF;
     overflow: hidden;
 }
 .rules-text:hover {
-    height: 100%;
-    background-color: rgba(#4a474b, 0.61)
+    background: #0a0a3b;
+    height: 79%;
+    top: -46%;
+    -webkit-line-clamp: 18;
+    font-size: 9.5px;
 }
-.health {
+.attack {
     font-family: Impact, "Arial Black", sans-serif;
     color: #eb1a1a;
     position: relative;
